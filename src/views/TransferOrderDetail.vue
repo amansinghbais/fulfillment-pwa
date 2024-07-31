@@ -73,7 +73,7 @@
                     </div>
                   </div>
 
-                  <div v-for="item in shipment.items" :key="item.shipmentItemSeqId" class="order-item">
+                  <div v-for="item in shipment.items" :key="item.shipmentItemSeqId" class="product">
                     <div class="product-info">
                       <ion-item lines="none">
                         <ion-thumbnail slot="start">
@@ -86,7 +86,7 @@
                         </ion-label>
                       </ion-item>
                     </div>
-                    <div class="product-metadata">
+                    <div>
                       <ion-item lines="none">
                         <ion-badge color="medium" slot="end">{{ item.orderedQuantity }} {{ translate("ordered") }}</ion-badge>
                         <ion-badge color="success" class="ion-margin-start" slot="end">{{ item.quantity }} {{ translate("shipped") }}</ion-badge>
